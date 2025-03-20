@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-gray-100;
+  }
+}
+
+/* Animated background */
+.animated-bg {
+  background: linear-gradient(
+    -45deg,
+    rgba(17, 24, 39, 1),
+    rgba(0, 0, 0, 1),
+    rgba(6, 182, 212, 0.1),
+    rgba(17, 24, 39, 1)
+  );
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+.glow {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px rgba(6, 182, 212, 0.2),
+                0 0 10px rgba(6, 182, 212, 0.2);
+  }
+  to {
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.3),
+                0 0 20px rgba(6, 182, 212, 0.3);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Loading animation */
+.loading-ring {
+  animation: loadingRing 0.6s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+@keyframes loadingRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Smooth scrolling and better text rendering */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-800 rounded-full;
+  border: 2px solid rgba(6, 182, 212, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-700;
+  border: 2px solid rgba(6, 182, 212, 0.2);
+}
+
+/* Transition durations */
+.transition-all {
+  transition-duration: 200ms !important;
+}
+
+.transition-transform {
+  transition-duration: 200ms !important;
+}
+
+.transition-colors {
+  transition-duration: 200ms !important;
+}
+
+/* Hover optimizations */
+*:hover {
+  transition-duration: 200ms !important;
+}
