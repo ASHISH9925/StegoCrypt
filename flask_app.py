@@ -183,25 +183,5 @@ def decrypt_chaos():
         return jsonify({"error": str(e)}), 500
 
 
-@app.after_request
-def add_cors_headers(response):
-    response.headers["Access-Control-Allow-Origin"] = "*"
-    response.headers["Access-Control-Allow-Headers"] = "Content-Type,Authorization,X-Requested-With,Accept,Origin"
-    response.headers["Access-Control-Allow-Methods"] = "GET,POST,OPTIONS,PUT,DELETE"
-
-    
-    return response
-
- 
-@app.route("/<path:path>")
-@app.route("/")
-def handle_options():
-    response = make_response()
-    response.headers['Access-Control-Allow-Origin'] = '*'
-    response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization'
-    response.headers['Access-Control-Allow-Methods'] = 'GET,POST,OPTIONS'
-    return response
-
-
 if __name__ == '__main__':
     app.run(port=5000, debug=True)

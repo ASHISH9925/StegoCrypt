@@ -3,24 +3,25 @@
 A web-based application that implements modern cryptographic and steganographic techniques for secure image encryption, decryption, and data hiding.  
 
 ## Features  
-
+ 
 - **AES Encryption & Decryption**  
-  Uses the Advanced Encryption Standard (AES) to securely encrypt images, generating a unique key for decryption. The key must be provided to restore the original image.  
-
+  Leverages the **Advanced Encryption Standard (AES)** to securely encrypt images, generating a unique decryption key. The original image can only be restored by providing the correct key.  
+ 
 - **Triple DES Encryption & Decryption**  
-  Implements the Triple DES algorithm for secure encryption, adding an extra layer of protection by encrypting data multiple times with different keys.  
-
+  Implements the **Triple DES algorithm** to enhance security by encrypting data multiple times with distinct keys, adding an extra layer of protection.  
+ 
 - **Chaos-Based Image Encryption**  
-  Utilizes a **logistic map-based chaotic system** to scramble pixel values unpredictably. This method ensures high sensitivity to initial conditions, making decryption without the correct parameters nearly impossible.  
-
+  Uses a **logistic map-based chaotic system** to randomly scramble pixel values, ensuring extreme sensitivity to initial conditions. Without the precise parameters, decryption is practically impossible.  
+ 
 - **LSB Steganography (Hide & Extract)**  
-  Embeds secret messages within images using **Least Significant Bit (LSB) steganography**, ensuring minimal visible distortion. Hidden text can be extracted without data loss.  
+  Embeds confidential messages within images using **Least Significant Bit (LSB) steganography**, preserving image quality while allowing seamless extraction of hidden data.  
+ 
+- **Save Processed Files**  
+  Provides an option to download encrypted, decrypted, or steganographic images effortlessly for future use.  
+ 
+- **Enhanced User Interface**  
+  Features an intuitive and polished UI, making encryption, decryption, and steganographic tasks accessible with ease.
 
-- **Download Processed Files**  
-  Encrypted, decrypted, and steganographic images can be easily saved for further use.  
-
-- **User-Friendly Interface**  
-  Designed with a clean and intuitive UI, making cryptographic and steganographic operations accessible with just a few clicks.  
 
 ## Technologies Used  
 
