@@ -10,8 +10,13 @@ flask = "*"
 opencv-python = "*"
 cryptography = "*"
 flask-cors = "*"
+opencv-python-headless = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.11"
+
+[system-packages]
+libgl1
+libglib2.0-0
