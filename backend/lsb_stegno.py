@@ -1,5 +1,4 @@
 import cv2
-import numpy as np
 
 def xor_cipher(data: bytes, password: str) -> bytes:
     """Encrypts or decrypts data using a simple repeating-key XOR cipher."""

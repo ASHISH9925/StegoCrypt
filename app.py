@@ -1,10 +1,9 @@
-from flask import Flask, make_response, request, jsonify, send_from_directory, send_file
+from flask import Flask,request, jsonify, send_from_directory, send_file
 from backend.aes_image import encrypt_image as aes_encrypt, decrypt_image as aes_decrypt
 from backend.triple_des import encrypt_image as des_encrypt, decrypt_image as des_decrypt
 from backend.lsb_stegno import encode_image as lsb_encode, decode_image as lsb_decode
 from backend.chaos_based_image import scramble_image, decrypt_image
 import os
-import numpy as np
 import zipfile
 from io import BytesIO
 from flask_cors import CORS
@@ -14,7 +13,7 @@ CORS(app)  # Enable Flask-CORS for general usage
 
 @app.route("/")
 def serve_frontend():
-    print("recieved cat")
+    print("processing request")
     return send_from_directory("frontend/dist", "index.html")
 
 @app.route("/<path:path>")
@@ -185,4 +184,4 @@ def decrypt_chaos():
 
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(port=5000, debug=False)

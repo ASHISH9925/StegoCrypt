@@ -1,6 +1,5 @@
 import numpy as np
 import cv2
-import os
 
 def logistic_map(x, r=3.9):
     return r * x * (1 - x)
