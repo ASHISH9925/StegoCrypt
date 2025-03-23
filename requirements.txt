@@ -1,0 +1,7 @@
+pycryptodome
+matplotlib
+flask
+cryptography
+flask-cors
+opencv-python-headless
+gunicorn

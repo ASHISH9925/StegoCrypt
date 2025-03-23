@@ -38,3 +38,4 @@ dist/
 
 # Ignore Python virtual environments (if not using pipenv)
 .venv/
+.vercel
