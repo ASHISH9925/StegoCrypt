@@ -52,23 +52,19 @@ To set up the project locally, follow these steps:
    pipenv shell
    ```  
 
-4. **Start the Flask server**  
-   ```bash
-   python app.py
-   ```  
-
-5. **Install frontend dependencies**  
+4. **Install frontend dependencies**  
    ```bash
    cd frontend
    npm install
    ```  
 
-6. **Start the frontend**  
+5. **Start the Flask server**  
    ```bash
-   npm start
-   ```  
+   cd ..
+   python app.py
+   ```
 
-7. **Open the application**  
+6. **Open the application**  
    ```
    http://localhost:5000
    ```  
