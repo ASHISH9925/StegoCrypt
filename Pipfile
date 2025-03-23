@@ -16,7 +16,3 @@ opencv-python-headless = "*"
 
 [requires]
 python_version = "3.11"
-
-[system-packages]
-libgl1
-libglib2.0-0
