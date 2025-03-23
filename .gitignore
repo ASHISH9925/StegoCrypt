@@ -18,7 +18,6 @@ yarn-error.log
 
 # Ignore build files
 build/
-dist/
 *.cache
 *.parcel-cache
 *.next/
