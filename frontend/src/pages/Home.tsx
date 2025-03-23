@@ -85,7 +85,7 @@ export const Home = () => {
           Welcome to StegoCrypt
         </h1>
         <p className="text-gray-400 max-w-2xl mx-auto">
-           A project Showcasing modern cryptographic and steganographic techniques for image security          npx prettier --write .
+          A project Showcasing modern cryptographic and steganographic techniques for image security
         </p>
       </div>
       
