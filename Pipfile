@@ -11,6 +11,7 @@ cryptography = "*"
 flask-cors = "*"
 opencv-python-headless = "*"
 gunicorn = "*"
+pillow = ">=12.2.0"
 
 [dev-packages]
 
